@@ -9,7 +9,7 @@ import ro.ase.cts.classes.Aplicant;
 public abstract class AplicantReader {
 
 	private String fileName;
-	
+
 	public abstract List<Aplicant> citesteAplicanti() throws FileNotFoundException, NumberFormatException;
 
 	public AplicantReader(String fileName) {
@@ -30,7 +30,7 @@ public abstract class AplicantReader {
 		String[] vect = new String[5];
 		for (int i = 0; i < nr; i++)
 			vect[i] = input.next();
-		
+
 		aplicant.setNume(nume);
 		aplicant.setPrenume(prenume);
 		aplicant.setVarsta(varsta);
