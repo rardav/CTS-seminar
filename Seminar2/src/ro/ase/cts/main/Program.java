@@ -11,15 +11,15 @@ public class Program {
 	
 	public static List<Aplicant> citesteAplicanti(AplicantReader reader) throws NumberFormatException, FileNotFoundException{
 		
-		return reader.citesteAplicant();
+		return reader.citesteAplicanti();
 	}
 
 	public static void main(String[] args) {
 		List<Aplicant> listaAplicanti;
-		
+		AplicantReader aplicantReader = new StudentReader("studenti.txt");
 		
 		try {
-			listaAplicanti = citesteAplicanti(new AngajatReader("angajati.txt"));
+			listaAplicanti = citesteAplicanti(aplicantReader);
 			for(Aplicant angajat:listaAplicanti)
 				System.out.println(angajat.toString());
 		} catch (FileNotFoundException e) {
