@@ -64,4 +64,5 @@ public abstract class Aplicant{
 		this.denumireProiect = vect;
 	}
 
+	public abstract float getSumaFinantare();
 }
