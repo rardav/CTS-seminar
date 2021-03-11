@@ -44,8 +44,13 @@ public class Student extends Aplicant {
 		return s;
 	}
 	@Override
-	public float getSumaFinantare() {
+	public  float getSumaFinantare() {
 		return sumaFinantare;
 	}
+	public static void setSumaFinantare(float sumaFinantare) {
+		Student.sumaFinantare = sumaFinantare;
+	}
+	
+	
 	
 }

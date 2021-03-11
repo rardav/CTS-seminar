@@ -36,6 +36,11 @@ public class Angajat extends Aplicant{
 	}
 	
 	
+	
+	
+	public static void setSumaFinantare(float sumaFinantare) {
+		Angajat.sumaFinantare = sumaFinantare;
+	}
 	@Override
 	public String toString() {
 		return "Angajat: Nume=" + nume + ", Prenume=" + prenume
