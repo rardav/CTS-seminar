@@ -34,7 +34,7 @@ public abstract class AplicantReader {
 		aplicant.setNume(nume);
 		aplicant.setPrenume(prenume);
 		aplicant.setVarsta(varsta);
-		aplicant.setNr_proiecte(nr, vect);
+		aplicant.setNrProiecte(nr, vect);
 		aplicant.setPunctaj(punctaj);
 	}
 

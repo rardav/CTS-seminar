@@ -20,8 +20,10 @@ public class Program {
 		
 		try {
 			listaAplicanti = citesteAplicanti(aplicantReader);
-			for(Aplicant angajat:listaAplicanti)
+			for(Aplicant angajat:listaAplicanti) {
 				System.out.println(angajat.toString());
+				angajat.afiseazaStatus(new Proiect(80));
+			}
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

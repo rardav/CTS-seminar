@@ -34,7 +34,7 @@ public class Student extends Aplicant {
 	}
 	@Override
 	public String toString() {
-		return "Student: Nume=" + nume + ", Prenume=" + prenume + ", Varsta=" + varsta + ", Punctaj=" + punctaj + ", Nr_proiecte=" + nr_proiecte +  ", DenumireProiect=" + Arrays.toString(denumireProiect) + "Facultate=" + facultate + ", An_studii=" + an_studii ;
+		return "Student: "+super.toString() + "Facultate=" + facultate + ", An_studii=" + an_studii ;
 	}
 	
 	
@@ -44,13 +44,16 @@ public class Student extends Aplicant {
 		return s;
 	}
 	@Override
-	public  float getSumaFinantare() {
+	public float getSumaFinantare() {
 		return sumaFinantare;
 	}
 	public static void setSumaFinantare(float sumaFinantare) {
 		Student.sumaFinantare = sumaFinantare;
 	}
 	
-	
+public static float getSuma() {
+		
+		return sumaFinantare ;
+	}
 	
 }
