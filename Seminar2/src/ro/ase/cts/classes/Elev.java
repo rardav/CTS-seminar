@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class Elev extends Aplicant{
 	private int clasa;
 	private String tutore;
+	private static float sumaFinantare = 10;
 	
 	public int getClasa() {
 		return clasa;
@@ -18,6 +19,12 @@ public class Elev extends Aplicant{
 	public void setTutore(String tutore) {
 		this.tutore = tutore;
 	}
+	
+	@Override
+	public float getSumaFinantare() {
+		return sumaFinantare;
+	}
+	
 	
 	
 	@Override
