@@ -1,5 +1,6 @@
 package ro.ase.cts.main;
 
+import ro.ase.cts.DRclasses.Doctor;
 import ro.ase.cts.classes.ClinicaVeterinara;
 import ro.ase.cts.classes.ClinicaVeterinaraLazy;
 
@@ -21,6 +22,18 @@ public class Program {
 		
 		System.out.println(cl1);
 		System.out.println(cl2);
+		System.out.println("\n===================\n");
+		
+		//clasa personalizata
+		
+		Doctor doc1 = Doctor.getInstance("Numescu", 25, false);
+		Doctor doc2 = Doctor.getInstance("Nenumescu", 46, true);
+	
+		System.out.println(doc1);
+		System.out.println(doc2);
+		
+		doc2.setNume("Numescunu");
+		System.out.println(doc1);
 	}
 
 }
