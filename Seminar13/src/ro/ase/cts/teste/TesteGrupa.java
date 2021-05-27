@@ -49,4 +49,43 @@ public class TesteGrupa {
 		}
 		assertEquals(0.6f, grupa.getPromovabilitate(), .001f);
 	}
+	
+	@Test
+	public void limitaInferioaraPromovabilitateTest() {
+		Grupa grupa = new Grupa(1005);
+		for(int i=0;i<10;i++) {
+			Student student = new Student();
+			student.adaugaNota(1);
+			grupa.adaugaStudent(student);
+		}
+		assertEquals(0.0f, grupa.getPromovabilitate(), .001f);
+	}
+	
+	@Test
+	public void limitaSuperioaraPromovabilitateTest() {
+		Grupa grupa = new Grupa(1005);
+		for(int i=0;i<10;i++) {
+			Student student = new Student();
+			student.adaugaNota(10);
+			grupa.adaugaStudent(student);
+		}
+		assertEquals(1f, grupa.getPromovabilitate(), .001f);
+	}
+	
+	@Test
+	public void boundaryTestPromovabilitate() {
+		Grupa grupa = new Grupa(1010);
+		assertEquals(0, grupa.getPromovabilitate(), 0.001f);
+	}
+	
+	@Test 
+	public void cardinalityPromovabilitateTest() {
+		Grupa grupa = new Grupa(1050);
+		Student student = new Student();
+		student.adaugaNota(5);
+		grupa.adaugaStudent(student);
+		assertEquals(1f, grupa.getPromovabilitate(), 0.001f);
+	}
+	
+	
 }
