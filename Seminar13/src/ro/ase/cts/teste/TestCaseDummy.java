@@ -2,6 +2,7 @@ package ro.ase.cts.teste;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.experimental.categories.Category;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -10,6 +11,8 @@ import org.junit.jupiter.api.Test;
 
 import ro.ase.cts.clase.Grupa;
 import ro.ase.cts.clase.IStudent;
+import ro.ase.cts.teste.categorii.TesteNormale;
+import ro.ase.cts.teste.categorii.TesteUrgente;
 import ro.ase.cts.teste.claseTest.StudentDummy;
 
 class TestCaseDummy {
